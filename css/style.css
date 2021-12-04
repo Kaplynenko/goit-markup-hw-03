@@ -308,10 +308,19 @@ img {
   background-color: var(--accent-color);
   color: var(--primery-background);
 }
-.container .cards-item {
+.card>img{
+    display:inline-block;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    margin: 0;
+}
+/* .container {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 .cards-item .card {
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -320,12 +329,12 @@ img {
   letter-spacing: 0.06em;
   margin-right: 15px;
 }
-.card .card-item {
+/* .card .card-item {
   color: var(--main-content-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em; */
 }
 .container-footer .logo {
   margin: 0;
