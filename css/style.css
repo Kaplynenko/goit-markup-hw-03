@@ -308,19 +308,36 @@ img {
   background-color: var(--accent-color);
   color: var(--primery-background);
 }
-.card > img {
-  display: inline-block;
+.cards-item {
+  flex-wrap: wrap;
 }
+
 .products {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   text-align: start;
   margin: 0;
+  padding: 0;
 }
 /* .container {
   display: flex;
   flex-wrap: wrap;
 } */
+.depiction {
+  padding: 20px 24px 20px 24px;
+}
+.depiction > h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.depiction > p {
+  font-size: 16px;
+  line-height: 1.87;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .cards-item .card {
   color: var(--secondary-text-color);
   font-weight: 700;
