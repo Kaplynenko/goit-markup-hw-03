@@ -287,6 +287,8 @@ img {
 .button-list {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding-bottom: 50px;
 }
 .button-list .btn-list:not(:last-child) {
   margin-right: 8px;
@@ -310,15 +312,22 @@ img {
 }
 .cards-item {
   flex-wrap: wrap;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
-
+.products .cards-item:nth-child(3n) {
+  margin-right: 0;
+}
+.products .cards-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
 .products {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: start;
   margin: 0;
-  padding: 0;
+  padding: 0 0 94px 0;
 }
 /* .container {
   display: flex;
@@ -338,13 +347,14 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .cards-item .card {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-right: 15px;
+  border: 1px solid #eeeeee;
 }
 /* .card .card-item {
   color: var(--main-content-color);
